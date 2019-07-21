@@ -26,6 +26,9 @@ public class Dashboard {
 	@FindBy(css="[class='sidebar-menu tree'] > li >a > span")
 	List<WebElement> menus;
 	
+	@FindBy(css="[class='sidebar-menu tree'] > li >a > span[1]")
+	WebElement menusElement;
+	
 	public boolean verifyLogoutButton() 
 	{
 	   boolean b=false;
